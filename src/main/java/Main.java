@@ -31,7 +31,7 @@ public class Main {
 
     }
 
-
+    //static variables
     static DataBase dataBase;
 
 
