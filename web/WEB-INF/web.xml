@@ -5,13 +5,13 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>servletTemplate</servlet-name>
+        <servlet-name>ServletTemplate</servlet-name>
         <servlet-class>ServletTemplate</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>servletTemplate</servlet-name>
-        <url-pattern>*.html</url-pattern>
+        <servlet-name>ServletTemplate</servlet-name>
+        <url-pattern>/linkTemplate</url-pattern>
     </servlet-mapping>
 
 
