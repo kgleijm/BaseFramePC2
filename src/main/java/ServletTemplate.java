@@ -8,14 +8,7 @@ import java.io.IOException;
 public class ServletTemplate extends HttpServlet{
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-
-
-        for (int i = 0; i < 100; i++) {
-            System.out.println("gelukt");
-        }
-
         RequestDispatcher view = req.getRequestDispatcher("PageTemplate/templateHTMLfile.html");
         view.forward(req, res);
-
     }
 }
