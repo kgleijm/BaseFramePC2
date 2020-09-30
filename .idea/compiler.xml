@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BaseFramePC" target="7" />
+      <module name="BaseFramePC" target="8.0" />
     </bytecodeTargetLevel>
   </component>
 </project>
