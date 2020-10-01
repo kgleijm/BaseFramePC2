@@ -42,7 +42,8 @@
 
       //var url= "http://localhost:8080/BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html";
       //window.location = url;
-      window.location.pathname = 'BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html'
+      //window.location.pathname = 'BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html'
+      window.location.href = '<%=request.getContextPath()%>/linkTemplate';
     }
 
     function signOut() {
