@@ -25,8 +25,6 @@
     <a href="<%=request.getContextPath()%>/linkTemplate">Call the servlet</a>
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <div id="content"></div>
-    <button onclick="signOut()">Sign Out</button>
   </body>
 
   <script>
@@ -43,12 +41,6 @@
       //var url= "http://localhost:8080/BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html";
       //window.location = url;
       window.location.pathname = 'BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html'
-    }
-
-    function signOut() {
-      gapi.auth2.getAuthInstance().signOut().then(function() {
-        console.log('user signed out')
-      })
     }
   </script>
 </html>
