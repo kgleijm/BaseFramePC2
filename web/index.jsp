@@ -21,7 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <body>
-    Body of the web page!
+  <h1>Body of the web page! v2</h1>
     <a href="<%=request.getContextPath()%>/linkTemplate">Call the servlet</a>
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -37,6 +37,7 @@
 
       var id_token = googleUser.getAuthResponse().id_token
       console.log("ID Token: " + id_token);
+
 
       //var url= "http://localhost:8080/BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html";
       //window.location = url;
