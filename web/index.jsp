@@ -21,7 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <body>
-  <h1>Body of the web page! v2</h1>
+  <h1>Body of the web page! v3</h1>
     <a href="<%=request.getContextPath()%>/linkTemplate">Call the servlet</a>
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -39,10 +39,27 @@
       console.log("ID Token: " + id_token);
 
 
+
+
+      //send user details to server
+      var redirectUrl = 'login';
+
+      //using jquery to post data dynamically
+      var form = $('<form action="' + redirectUrl + '" method="post">' +
+              '<input type="text" name="id_token" value="' + googleUser.getAuthResponse().id_token + '" />' +
+              '<input type="text" name="name" value="' + googleUser.getBasicProfile().getGivenName() + '" />' +
+              '<input type="text" name="email" value="' + googleUser.getBasicProfile().getEmail() + '" />' +
+              '</form>');
+      $('body').append(form);
+      form.submit();
+
+
+
+
       //var url= "http://localhost:8080/BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html";
       //window.location = url;
       //window.location.pathname = 'BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html'
-      window.location.href = '<%=request.getContextPath()%>/linkTemplate';
+      //window.location.href = '<%=request.getContextPath()%>/linkTemplate';
     }
   </script>
 </html>
