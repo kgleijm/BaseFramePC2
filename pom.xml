@@ -16,6 +16,7 @@
             <version>42.2.10</version>
         </dependency>
 
+        <!-- for creating servlets -->
         <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -24,6 +25,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- handling google id_token -->
+        <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.8.0-beta</version>
+        </dependency>
 
     </dependencies>>
 
