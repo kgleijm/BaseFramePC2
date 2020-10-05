@@ -18,9 +18,9 @@ public class ServletLogin extends HttpServlet{
 
         DatabaseManager.setup();
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("ServletLogin service");
-        }
+
+        System.out.println("ServletLogin service");
+
 
 
         try {
@@ -29,16 +29,17 @@ public class ServletLogin extends HttpServlet{
             String id_token = req.getParameter("id_token");
             String email = req.getParameter("email");
 
-            for (int i = 0; i < 10; i++) {
-                System.out.println(email + " logged in with token " + id_token);
-            }
+
+            System.out.println(email + " logged in with token " + id_token);
+
+            DatabaseManager.logLoginAttempt(name, email);
 
         } catch (Exception e) {
 
-            for (int i = 0; i < 100; i++) {
-                System.out.println("failed");
-            }
-            throw new RuntimeException(e);
+
+            System.out.println("ServletLogin encountered failed login attempt");
+
+            //throw new RuntimeException(e);
         }
 
         RequestDispatcher view = req.getRequestDispatcher("LoginTemplate/templateHTMLfile.html");
