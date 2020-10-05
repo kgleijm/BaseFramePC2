@@ -5,7 +5,7 @@
          version="4.0">
 
 
-<!--template, COPY to use for your own servlet-->
+<!--Template, COPY to use for your own servlet-->
     <servlet>
         <servlet-name>ServletTemplate</servlet-name>
         <servlet-class>ServletTemplate</servlet-class>
@@ -16,7 +16,7 @@
         <url-pattern>/linkTemplate</url-pattern>
     </servlet-mapping>
 
-<!--fires on login with google-->
+<!--Fires on login with google-->
     <servlet>
         <servlet-name>ServletLogin</servlet-name>
         <servlet-class>ServletLogin</servlet-class>
@@ -26,6 +26,8 @@
         <servlet-name>ServletLogin</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+
+
 
 
 </web-app>

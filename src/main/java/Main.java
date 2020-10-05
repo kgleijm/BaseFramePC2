@@ -12,6 +12,7 @@ public class Main {
         String password;
         String dataBaseName;
 
+
         public DataBase(String user, String password, String dataBaseName){
             System.out.println("started DataBase constructor");
             try{
@@ -19,6 +20,7 @@ public class Main {
                 c = DriverManager
                         .getConnection("jdbc:postgresql://localhost:5432/" + dataBaseName,
                                 user, password);
+                System.out.println("succesfull DataBase constructor");
                 user = user;
                 password = password;
                 dataBaseName = dataBaseName;
