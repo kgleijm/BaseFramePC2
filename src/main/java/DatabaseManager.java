@@ -47,7 +47,7 @@ class DatabaseManager {
             System.out.println("successful query for setup of Login Table");
         } catch (SQLException e) {
             System.out.println("maybe failed to query the setup for Login Table check pgAdmin if table exists");
-            e.printStackTrace();
+            //e.printStackTrace();
         }
 
     }
