@@ -16,10 +16,12 @@ public class ServletLogin extends HttpServlet{
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
+        DatabaseManager.setup();
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println("ServletLogin service");
         }
+
 
         try {
 
@@ -27,25 +29,9 @@ public class ServletLogin extends HttpServlet{
             String id_token = req.getParameter("id_token");
             String email = req.getParameter("email");
 
-            for (int i = 0; i < 100; i++) {
-                System.out.println(email + "logged in");
+            for (int i = 0; i < 10; i++) {
+                System.out.println(email + " logged in with token " + id_token);
             }
-
-
-            /*
-            String idToken = req.getParameter("id_token");
-            GoogleIdToken.Payload payLoad = IdTokenVerifierAndParser.getPayload(idToken);
-            String name = (String) payLoad.get("name");
-            String email = payLoad.getEmail();
-            System.out.println("User name: " + name);
-            System.out.println("User email: " + email);
-
-            HttpSession session = req.getSession(true);
-            session.setAttribute("userName", name);
-            req.getServletContext()
-                    .getRequestDispatcher("/welcome-page.jsp").forward(req, resp);
-
-             */
 
         } catch (Exception e) {
 
@@ -55,8 +41,8 @@ public class ServletLogin extends HttpServlet{
             throw new RuntimeException(e);
         }
 
-        //RequestDispatcher view = req.getRequestDispatcher("PageTemplate/templateHTMLfile.html");
-        //view.forward(req, res);
+        RequestDispatcher view = req.getRequestDispatcher("LoginTemplate/templateHTMLfile.html");
+        view.forward(req, res);
 
     }
 
