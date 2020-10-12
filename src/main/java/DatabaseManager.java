@@ -33,7 +33,7 @@ class DatabaseManager {
 
         // setting up tables
         setupLoginTable();
-
+        //note
     }
 
     public static void setupLoginTable(){
