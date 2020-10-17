@@ -22,6 +22,9 @@
     <link rel = "stylesheet" type = "text/css" href = "styles.css"/>
 
   <body>
+    Body of the web page!
+    <a href="<%=request.getContextPath()%>/linkReservations">Call the servlet</a>
+
     <div class="container-sm h-100 d-flex justify-content-center align-items-center">
       <div class="card bg-white text-white align-items-center" style="width: 30rem; border-radius: 10%">
         <div class="card-body p-5">
