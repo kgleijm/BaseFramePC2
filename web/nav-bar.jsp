@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,25 +16,25 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a class="navbar-brand" href="/BaseFramePC_war_exploded/login" onclick="javascript:onHome()"><img src="LoginTemplate/Resources/ngti-logo.png" alt="Logo" style="width:50px; height:50px"></a>
+        <a class="navbar-brand" href="<%=request.getContextPath()%>/login" onclick="javascript:onHome()"><img src="LoginTemplate/Resources/ngti-logo.png" alt="Logo" style="width:50px; height:50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/BaseFramePC_war_exploded/linkPlan">Plan</a>
+                    <a class="nav-link" href="<%=request.getContextPath()%>/linkPlan">Plan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/BaseFramePC_war_exploded/linkReservations">Reservations</a>
+                    <a class="nav-link" href="<%=request.getContextPath()%>/linkReservations">Reservations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/BaseFramePC_war_exploded/linkInvitations">Invitations</a>
+                    <a class="nav-link" href="<%=request.getContextPath()%>/linkInvitations">Invitations</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/BaseFramePC_war_exploded/index.jsp" onclick="signOut();">Sign out</a>
+                    <a class="nav-link" href="<%=request.getContextPath()%>/index.jsp" onclick="signOut();">Sign out</a>
                 </li>
             </ul>
         </div>
