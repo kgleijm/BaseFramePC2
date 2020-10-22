@@ -1,0 +1,15 @@
+body {
+    background-image: url('Pictures/HomePagePic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding: 100px;
+}
+
+.card-img-top {
+    width: 256px;
+    height: 256px;
+}
