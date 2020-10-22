@@ -32,7 +32,8 @@ public class ServletLogin extends HttpServlet{
 
             System.out.println(email + " logged in with token " + id_token);
 
-            DatabaseManager.logLoginAttempt(name, email);
+            //DatabaseManager.logLoginAttempt(name, email);
+            DatabaseManager.loginTable.insertValues(email, "DEFAULT", name, "NULL");
 
         } catch (Exception e) {
 
