@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class ServletTemplate extends HttpServlet{
+public class ServletInvitations extends HttpServlet{
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
@@ -14,7 +14,7 @@ public class ServletTemplate extends HttpServlet{
             System.out.println("gelukt");
         }
 
-        RequestDispatcher view = req.getRequestDispatcher("PageTemplate/templateHTMLfile.html");
+        RequestDispatcher view = req.getRequestDispatcher("InvitationsTemplate/templateHTMLfile.html");
         view.forward(req, res);
 
     }
