@@ -47,7 +47,7 @@ class DatabaseManager {
 
         // setting up tables
         //setupLoginTable();
-        //note
+        //note2
     }
 
     private static void setupLoginTable(){
