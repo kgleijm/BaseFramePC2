@@ -7,6 +7,8 @@ class DatabaseManager {
 
     private static java.sql.Connection database = null;
 
+    static Table loginTable;
+    static Table employeeTable;
 
     public static void setup(){
         if (database != null){return;}
@@ -30,14 +32,28 @@ class DatabaseManager {
             System.exit(0);
         }
 
+        employeeTable = new Table("employeeTable",
+                "employeeTable_employeeID SERIAL PRIMARY KEY, " +
+                "loginTable_lastName varchar(35), " +
+                "loginTable_firstName varchar(35), " +
+                "loginTable_emailAddress varchar(35)");
+
+        loginTable = new Table("loginTable",
+                "loginTable_emailAddress varchar(35), " +
+                                    "loginTable_timeStamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " +
+                                    "loginTable_loginName varchar(35), " +
+                                    "loginTable_employeeID INT, " +
+                                    "FOREIGN KEY(loginTable_employeeID) REFERENCES employeeTable(employeeTable_employeeID)");
 
         // setting up tables
-        setupLoginTable();
+        //setupLoginTable();
         //note
     }
 
     private static void setupLoginTable(){
         Statement st = null;
+
+        /*
         try {
             st = database.createStatement();
             st.executeQuery("CREATE TABLE IF NOT EXISTS loginAttempts(              atTime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, " +
@@ -49,6 +65,7 @@ class DatabaseManager {
             System.out.println("maybe failed to query the setup for Login Table check pgAdmin if table exists");
             //e.printStackTrace();
         }
+        */
 
     }
 
@@ -106,7 +123,9 @@ class Table{
             } catch (Exception e) {
                 if (value.toLowerCase().contains("default")) {
                     sql += "DEFAULT";
-                } else {
+                }else if (value.toLowerCase().contains("null")) {
+                    sql += "NULL";
+                }  else {
                     sql += "'" + value + "'";
                 }
             }
