@@ -50,23 +50,26 @@ class DatabaseManager {
 
         workspaceTable = new Table("workspaceTable",
                 "workspaceTable_workspaceID INT PRIMARY KEY, " +
-                        "workspaceTable_reservationID INT FOREIGN KEY, " +
                         "workspaceTable_blockNumber INT");
 
         reservationTable = new Table("reservationTable",
                 "reservationTable_reservationTableID INT PRIMARY KEY, " +
-                        "reservationTable_workspaceID INT FOREIGN KEY, " +
+                        "reservationTable_workspaceID INT, " +
                         "reservationTable_date varchar(20), " +
                         "reservationTable_slots INT, " +
                         "reservationTable_state INT, " +
-                        "reservationTable_employeeID INT FOREIGN KEY");
+                        "reservationTable_employeeID INT, " +
+                        "FOREIGN KEY(reservationTable_employeeID) REFERENCES employeeTable(employeeTable_employeeID), " +
+                        "FOREIGN KEY(reservationTable_workspaceID) REFERENCES workspaceTable(workspaceTable_workspaceID)");
 
         invitationTable = new Table("invitationTable",
                 "invitationTable_invitedBy varchar(35), " +
-                        "invitationTable_invitee, varchar(35), " +
-                        "invitationTable_employeeID INT FOREIGN KEY, " +
-                        "invitationTable_reservationID INT FOREIGN KEY, " +
-                        "PRIMARY KEY(invitationTable_employeeID, invitationTable_reservationID) REFERENCES employeeTable(employeeTable_employeeID), reservationTable(reservationTable_reservationTableID)");
+                        "invitationTable_invitee varchar(35), " +
+                        "invitationTable_employeeID INT, " +
+                        "invitationTable_reservationID INT, " +
+                        "FOREIGN KEY(invitationTable_employeeID) REFERENCES employeeTable(employeeTable_employeeID), " +
+                        "FOREIGN KEY(invitationTable_reservationID) REFERENCES reservationTable(reservationTable_reservationTableID), " +
+                        "PRIMARY KEY(invitationTable_employeeID, invitationTable_reservationID)");
 
         // setting up tables
         //setupLoginTable();
