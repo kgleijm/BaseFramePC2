@@ -89,7 +89,7 @@ class DatabaseManager {
             //e.printStackTrace();
         }
         */
-
+        //comment
     }
 
     public static void logLoginAttempt(String name, String email){
