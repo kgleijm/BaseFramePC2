@@ -9,19 +9,37 @@ import java.sql.*;
 
 public class ServletReservations extends HttpServlet{
 
+
+
+
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
 
         String email = req.getParameter("email");
+        ResultSet rs = DatabaseManager.getResultsFromQuery("select * from logintable where logintable_emailaddress='"+ email +"' limit 10");
+        req.setAttribute("results", rs);
 
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println(email + " sent reservations request to ReservationServlet");
+        try {
+            while (rs.next()) {
+                for (int i = 1; i <= 3; i++) {
+                    if (i > 1) System.out.print(",  ");
+                    String columnValue = rs.getString(i);
+                    System.out.print(columnValue + " ");
+                }
+                System.out.println("");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
 
 
 
-        //RequestDispatcher view = req.getRequestDispatcher("ReservationsTemplate/templateHTMLfile.jsp");
-        //view.forward(req, res);
+        System.out.println(email + " sent reservations request to ReservationServlet");
+
+
+
+
+        RequestDispatcher view = req.getRequestDispatcher("ReservationsTemplate/templateHTMLfile.jsp");
+        view.forward(req, res);
     }
 }
