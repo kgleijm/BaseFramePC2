@@ -26,7 +26,7 @@
                     <a class="nav-link" href="<%=request.getContextPath()%>/linkPlan">Plan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<%=request.getContextPath()%>/linkReservations">Reservations</a>
+                    <a class="nav-link" onclick="onReservations()" >Reservations</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<%=request.getContextPath()%>/linkInvitations">Invitations</a>
@@ -69,6 +69,26 @@
         '<input type="text" name="name" value="' + googleUser.getBasicProfile().getGivenName() + '" />' +
         '<input type="text" name="email" value="' + googleUser.getBasicProfile().getEmail() + '" />' +
         '</form>');
+        $('body').append(form);
+        form.submit();
+    }
+
+    function onReservations() {
+
+
+        console.log("onreservations called")
+
+        var auth2 = gapi.auth2.getAuthInstance();
+        var profile = auth2.currentUser.get().getBasicProfile();
+        console.log(profile.getName());
+        console.log(profile.getEmail());
+
+
+        var redirectUrl = 'linkReservations';
+        //using jquery to post data dynamically
+        var form = $('<form action="' + redirectUrl + '" method="post">' +
+            '<input type="text" name="email" value="' + profile.getEmail() + '" />' +
+            '</form>');
         $('body').append(form);
         form.submit();
     }

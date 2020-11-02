@@ -80,16 +80,7 @@
                 console.log("nummer 4: " + Bool);
               }
               if (Bool === true) {
-                  //send user details to server
-                  var redirectUrl2 = 'ReservationsTemplate/templateHTMLfile.jsp';
-                  //using jquery to post data dynamically
-                  var form2 = $('<form action="' + redirectUrl2 + '" method="post">' +
-                      '<input type="text" name="id_token" value="' + googleUser.getAuthResponse().id_token + '" />' +
-                      '<input type="text" name="name" value="' + googleUser.getBasicProfile().getGivenName() + '" />' +
-                      '<input type="text" name="email" value="' + googleUser.getBasicProfile().getEmail() + '" />' +
-                      '</form>');
-                  $('body2').append(form2);
-                  form2.submit();
+
 
 
                   //send user details to server
