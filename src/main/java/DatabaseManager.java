@@ -102,6 +102,9 @@ class DatabaseManager {
         }
     }
 
+    static void createAccountIfNotExists(){
+
+    }
 
 
 }
