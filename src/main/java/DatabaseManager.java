@@ -76,38 +76,6 @@ class DatabaseManager {
         //note2
     }
 
-    private static void setupLoginTable(){
-        Statement st = null;
-
-        /*
-        try {
-            st = database.createStatement();
-            st.executeQuery("CREATE TABLE IF NOT EXISTS loginAttempts(              atTime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, " +
-                    "email VARCHAR(20)," +
-                    "loginName VARCHAR(20))");
-
-            System.out.println("successful query for setup of Login Table");
-        } catch (SQLException e) {
-            System.out.println("maybe failed to query the setup for Login Table check pgAdmin if table exists");
-            //e.printStackTrace();
-        }
-        */
-        //comment
-    }
-
-    public static void logLoginAttempt(String name, String email){
-        Statement st = null;
-        System.out.println("try to log attempt");
-        try {
-            st = database.createStatement();
-            st.execute("INSERT INTO loginAttempts (email, loginName) VALUES ('" + email + "', '" + name + "')");
-            System.out.println("successful query for inserting login record");
-        } catch (SQLException e) {
-            System.out.println("maybe failed to query the setup for Login Table check pgAdmin if record is added");
-            e.printStackTrace();
-        }
-    }
-
     static boolean executeSQLstatement(String sql){
         try {
             Statement st = database.createStatement();
