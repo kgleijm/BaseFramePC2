@@ -104,6 +104,19 @@ class DatabaseManager {
         }
     }
 
+    static ResultSet getResultsFromQuery(String sql){
+        try {
+            Statement st = database.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            System.out.println("successfully executed: " + sql);
+            return rs;
+        } catch (SQLException e) {
+            System.out.println("failed while executing: " + sql);
+            e.printStackTrace();
+            return null;
+        }
+    }
+
 
     static void createAccountIfNotExists(String name, String lastname, String email) {
         ResultSet rs = getResultsFromQuery("select employeeTable_emailaddress from employeeTable where employeeTable_emailaddress='" + email + "'");
