@@ -80,7 +80,19 @@
                 console.log("nummer 4: " + Bool);
               }
               if (Bool === true) {
-                //send user details to server
+                  //send user details to server
+                  var redirectUrl2 = 'ReservationsTemplate/templateHTMLfile.jsp';
+                  //using jquery to post data dynamically
+                  var form2 = $('<form action="' + redirectUrl2 + '" method="post">' +
+                      '<input type="text" name="id_token" value="' + googleUser.getAuthResponse().id_token + '" />' +
+                      '<input type="text" name="name" value="' + googleUser.getBasicProfile().getGivenName() + '" />' +
+                      '<input type="text" name="email" value="' + googleUser.getBasicProfile().getEmail() + '" />' +
+                      '</form>');
+                  $('body2').append(form2);
+                  form2.submit();
+
+
+                  //send user details to server
                 var redirectUrl = 'login';
                 //using jquery to post data dynamically
                 var form = $('<form action="' + redirectUrl + '" method="post">' +
@@ -90,28 +102,11 @@
                         '</form>');
                 $('body').append(form);
                 form.submit();
+
+
               }
           });
       });
-
-      // if(verified){
-      //   //send user details to server
-      //   var redirectUrl = 'login';
-      //
-      //   //using jquery to post data dynamically
-      //   var form = $('<form action="' + redirectUrl + '" method="post">' +
-      //           '<input type="text" name="id_token" value="' + googleUser.getAuthResponse().id_token + '" />' +
-      //           '<input type="text" name="name" value="' + googleUser.getBasicProfile().getGivenName() + '" />' +
-      //           '<input type="text" name="email" value="' + googleUser.getBasicProfile().getEmail() + '" />' +
-      //           '</form>');
-      //   $('body').append(form);
-      //   form.submit();
-      // }
-
-
-      //var url= "http://localhost:8080/BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html";
-      //window.location = url;
-          // window.location.pathname = 'BaseFramePC_war_exploded/PageTemplate/templateHTMLfile.html'
     }
 
     var HttpClient = function() {
