@@ -9,13 +9,15 @@ public class ServletPlanSubmit extends HttpServlet{
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
-        System.out.println("\n\n ServletPlan JAVA code");
 
-        System.out.println("day3: " + req.getParameter("day3"));
+        for (int i = 0; i < 100; i++) {
+            System.out.println("submit gelukt");
+            System.out.println("day3: " + req.getParameter("day3"));
+        }
 
 
 
-        RequestDispatcher view = req.getRequestDispatcher("PlanPage/planHTMLfile.html");
+        RequestDispatcher view = req.getRequestDispatcher("PlanTemplate/templateHTMLfile.html");
         view.forward(req, res);
 
     }

@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<%=request.getContextPath()%>/linkPlan">Plan</a>
+                    <a class="nav-link" onclick="onPlan()" >Plan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" onclick="onReservations()" >Reservations</a>
@@ -92,5 +92,26 @@
         $('body').append(form);
         form.submit();
     }
+
+    function onPlan() {
+
+
+        console.log("onPlan called")
+
+        var auth2 = gapi.auth2.getAuthInstance();
+        var profile = auth2.currentUser.get().getBasicProfile();
+        console.log(profile.getName());
+        console.log(profile.getEmail());
+
+
+        var redirectUrl = 'plan';
+        //using jquery to post data dynamically
+        var form = $('<form action="' + redirectUrl + '" method="post">' +
+            '<input type="text" name="email" value="' + profile.getEmail() + '" />' +
+            '</form>');
+        $('body').append(form);
+        form.submit();
+    }
+
 </script>
 </html>

@@ -13,8 +13,20 @@
 
     <servlet-mapping>
         <servlet-name>ServletPlan</servlet-name>
-        <url-pattern>/linkPlan</url-pattern>
+        <url-pattern>/plan</url-pattern>
     </servlet-mapping>
+
+    <!--Template, COPY to use for your own servlet-->
+    <servlet>
+        <servlet-name>ServletPlanSubmit</servlet-name>
+        <servlet-class>ServletPlanSubmit</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletPlanSubmit</servlet-name>
+        <url-pattern>/planSubmit</url-pattern>
+    </servlet-mapping>
+
 
 <!--Fires on login with google-->
     <servlet>
@@ -59,5 +71,7 @@
         <servlet-name>ServletHome</servlet-name>
         <url-pattern>/linkHome</url-pattern>
     </servlet-mapping>
+
+
 
 </web-app>
