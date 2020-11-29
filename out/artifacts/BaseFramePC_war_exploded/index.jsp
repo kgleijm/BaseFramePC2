@@ -90,6 +90,7 @@
                         '<input type="text" name="id_token" value="' + googleUser.getAuthResponse().id_token + '" />' +
                         '<input type="text" name="name" value="' + googleUser.getBasicProfile().getGivenName() + '" />' +
                         '<input type="text" name="email" value="' + googleUser.getBasicProfile().getEmail() + '" />' +
+                        '<input type="text" name="lastname" value="' + googleUser.getBasicProfile().getFamilyName() + '" />' +
                         '</form>');
                 $('body').append(form);
                 form.submit();
