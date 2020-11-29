@@ -12,16 +12,17 @@ public class ServletReservations extends HttpServlet{
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
 
+        System.out.println("\n\n ServletReservations JAVA code");
+        System.out.println("cleanup merge function found");
+
         String email = req.getParameter("email");
 
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println(email + " sent reservations request to ReservationServlet");
-        }
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(email + " sent reservations request to ReservationServlet");
+//        }
 
-
-
-        //RequestDispatcher view = req.getRequestDispatcher("ReservationsTemplate/templateHTMLfile.jsp");
-        //view.forward(req, res);
+        RequestDispatcher view = req.getRequestDispatcher("ReservationsPage/reservationsHTMLfile.jsp");
+        view.forward(req, res);
     }
 }
