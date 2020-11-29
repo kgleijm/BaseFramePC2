@@ -13,6 +13,7 @@ public class ServletReservations extends HttpServlet{
 
 
         System.out.println("\n\n ServletReservations JAVA code");
+        System.out.println("cleanup merge function found");
 
         String email = req.getParameter("email");
 

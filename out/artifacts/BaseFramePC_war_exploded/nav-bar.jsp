@@ -16,7 +16,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a class="navbar-brand" href="<%=request.getContextPath()%>/linkHome" onclick="javascript:onHome()"><img src="LoginTemplate/Resources/ngti-logo.png" alt="Logo" style="width:50px; height:50px"></a>
+        <a class="navbar-brand" href="<%=request.getContextPath()%>/linkHome" onclick="javascript:onHome()"><img src="LoginPage/Resources/ngti-logo.png" alt="Logo" style="width:50px; height:50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
