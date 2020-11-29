@@ -1,3 +1,5 @@
+import org.postgresql.util.PSQLException;
+
 import java.sql.*;
 
 
@@ -35,9 +37,10 @@ class DatabaseManager {
 
         employeeTable = new Table("employeeTable",
                 "employeeTable_employeeID SERIAL PRIMARY KEY, " +
-                "loginTable_lastName varchar(35), " +
-                "loginTable_firstName varchar(35), " +
-                "loginTable_emailAddress varchar(35)");
+                "employeeTable_lastName varchar(35), " +
+                "employeeTable_firstName varchar(35), " +
+                "employeeTable_emailAddress varchar(35) UNIQUE, " +
+                "employeeTable_isAdmin bool");
 
         loginTable = new Table("loginTable",
                 "loginTable_emailAddress varchar(35), " +
@@ -100,8 +103,15 @@ class DatabaseManager {
         }
     }
 
-    static void createAccountIfNotExists(){
 
+    static void createAccountIfNotExists(String name, String lastname, String email) {
+        ResultSet rs = getResultsFromQuery("select employeeTable_emailaddress from employeeTable where employeeTable_emailaddress='" + email + "'");
+        try {
+            if (!rs.next())
+                employeeTable.insertValues("DEFAULT", lastname, name, email, false);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 
 
