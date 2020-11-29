@@ -13,7 +13,7 @@
     <meta name="google-signin-client_id" content="621238999880-9rj10o12b4dvsi92ou1m74s8tmmblp3c.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
-    <link rel = "stylesheet" type = "text/css" href="ReservationsTemplate/templateCSSfile.css"/>
+    <link rel = "stylesheet" type = "text/css" href="ReservationsPage/reservationsCSSfile.css"/>
 </head>
 
 <body>
@@ -35,6 +35,11 @@
         </thead>
 
     <%
+
+        System.out.println(
+                "RESERVATIONS JSP"
+        );
+
         String name = request.getParameter("name");
         String id_token = request.getParameter("id_token");
         String email = request.getParameter("email");
@@ -45,6 +50,9 @@
         Connection database = null;
         Statement st = null;
         try {
+
+            System.out.println("\n\n ServletLogin JAVA code");
+
             Class.forName("org.postgresql.Driver");
             database = DriverManager
                     .getConnection("jdbc:postgresql://localhost:5432/officePlanagerData",

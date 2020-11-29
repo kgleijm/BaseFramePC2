@@ -61,17 +61,17 @@
         <url-pattern>/linkInvitations</url-pattern>
     </servlet-mapping>
 
+
     <!--Fires when Home logo is clicked-->
     <servlet>
         <servlet-name>ServletHome</servlet-name>
-        <servlet-class>ServletHome</servlet-class>
+        <servlet-class>ServletLogin</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>ServletHome</servlet-name>
         <url-pattern>/linkHome</url-pattern>
     </servlet-mapping>
-
 
 
 </web-app>

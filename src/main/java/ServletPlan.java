@@ -9,12 +9,11 @@ public class ServletPlan extends HttpServlet{
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
+        System.out.println("\n\n ServletPlan JAVA code");
 
-        for (int i = 0; i < 100; i++) {
-            System.out.println("gelukt");
-        }
 
-        RequestDispatcher view = req.getRequestDispatcher("PlanTemplate/templateHTMLfile.html");
+
+        RequestDispatcher view = req.getRequestDispatcher("PlanPage/planHTMLfile.html");
         view.forward(req, res);
 
     }
