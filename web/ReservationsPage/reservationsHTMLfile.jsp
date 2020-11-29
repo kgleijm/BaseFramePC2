@@ -36,37 +36,35 @@
 
     <%
 
-        System.out.println(
-                "RESERVATIONS JSP"
-        );
+        System.out.println("\tRESERVATIONS JSP");
 
         String name = request.getParameter("name");
         String id_token = request.getParameter("id_token");
         String email = request.getParameter("email");
 
-        System.out.println("user: " + name);
-        System.out.println("id_token: " + id_token);
-        System.out.println("email: " + email);
+        System.out.println("\t\tuser: " + name);
+        System.out.println("\t\tid_token: " + id_token);
+        System.out.println("\t\temail: " + email);
         Connection database = null;
         Statement st = null;
         try {
 
-            System.out.println("\n\n ServletLogin JAVA code");
+            System.out.println("\t\t reservaionsHTMLfile JAVA code");
 
             Class.forName("org.postgresql.Driver");
             database = DriverManager
                     .getConnection("jdbc:postgresql://localhost:5432/officePlanagerData",
                             "BaseFramePC", "none");
             st = database.createStatement();
-            String sql = "select * from loginattempts where loginname='Fatih' limit 10";
+            String sql = "select * from logintable where logintable_loginname='Kevin' limit 10";
             ResultSet rs = st.executeQuery(sql);
             while (rs.next()) {
                 %>
                 <tbody>
                     <tr class="table">
-                        <td class="table"><%=rs.getString("attime")%></td>
-                        <td class="table"><%=rs.getString("email")%></td>
-                        <td class="table"><%=rs.getString("loginname")%></td>
+                        <td class="table"><%=rs.getString("logintable_timestamp")%></td>
+                        <td class="table"><%=rs.getString("logintable_loginname")%></td>
+                        <td class="table"><%=rs.getString("logintable_emailaddress")%></td>
                         <td class="table">
                             <a href="${pageContext.request.contextPath}/linkHome"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                         </td>
