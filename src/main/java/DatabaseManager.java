@@ -37,11 +37,11 @@ class DatabaseManager {
 
         employeeTable = new Table("employeeTable",
                 "employeeTable_employeeID SERIAL PRIMARY KEY, " +
-                        "employeeTable_lastName varchar(35), " +
-                        "employeeTable_firstName varchar(35), " +
-                        "employeeTable_emailAddress varchar(35) UNIQUE, " +
-                        "employeeTable_isAdmin bool, " +
-                        "employeeTable_isBHV bool");
+                "employeeTable_lastName varchar(35), " +
+                "employeeTable_firstName varchar(35), " +
+                "employeeTable_emailAddress varchar(35) UNIQUE, " +
+                "employeeTable_isAdmin bool, " +
+                "employeeTable_isBHV bool");
 
         loginTable = new Table("loginTable",
                 "loginTable_emailAddress varchar(35), " +
