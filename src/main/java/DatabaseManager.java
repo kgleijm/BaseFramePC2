@@ -40,7 +40,8 @@ class DatabaseManager {
                 "employeeTable_lastName varchar(35), " +
                 "employeeTable_firstName varchar(35), " +
                 "employeeTable_emailAddress varchar(35) UNIQUE, " +
-                "employeeTable_isAdmin bool");
+                "employeeTable_isAdmin bool, " +
+                "employeeTable_isBHV bool");
 
         loginTable = new Table("loginTable",
                 "loginTable_emailAddress varchar(35), " +
@@ -108,7 +109,7 @@ class DatabaseManager {
         ResultSet rs = getResultsFromQuery("select employeeTable_emailaddress from employeeTable where employeeTable_emailaddress='" + email + "'");
         try {
             if (!rs.next())
-                employeeTable.insertValues("DEFAULT", lastname, name, email, false);
+                employeeTable.insertValues("DEFAULT", lastname, name, email, false, false);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

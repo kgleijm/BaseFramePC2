@@ -56,7 +56,7 @@
                     .getConnection("jdbc:postgresql://localhost:5432/officePlanagerData",
                             "BaseFramePC", "none");
             st = database.createStatement();
-            String sql = "select * from logintable where logintable_loginname='Kevin' limit 10";
+            String sql = "select * from logintable where logintable_loginname='Tony' limit 10";
             ResultSet rs = st.executeQuery(sql);
             while (rs.next()) {
                 %>
