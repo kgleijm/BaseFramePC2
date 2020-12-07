@@ -27,83 +27,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f76d20b8-18c7-40c8-be8d-3990aadcb3c9" name="Default Changelist" comment="">
+    <list default="true" id="f76d20b8-18c7-40c8-be8d-3990aadcb3c9" name="Default Changelist" comment="added displaying data to web">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServletDeleteReservations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServletUpdateReservations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/ReservationsPage/updateReservations.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/InvitationsTemplate/Resources/DeskImage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/InvitationsTemplate/Resources/HomePagePic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/InvitationsTemplate/Resources/blurred_desk1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/InvitationsTemplate/Resources/ngti-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/InvitationsTemplate/templateCSSfile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/LoginTemplate/Resources/DeskImage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/LoginTemplate/Resources/HomePagePic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/LoginTemplate/Resources/blurred_desk1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/LoginTemplate/Resources/ngti-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/LoginTemplate/templateCSSfile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/LoginTemplate/templateHTMLfile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/PlanTemplate/Resources/DeskImage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/PlanTemplate/Resources/HomePagePic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/PlanTemplate/Resources/blurred_desk1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/PlanTemplate/Resources/ngti-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/PlanTemplate/templateHTMLfile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/ReservationsTemplate/Resources/DeskImage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/ReservationsTemplate/Resources/HomePagePic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/ReservationsTemplate/Resources/blurred_desk1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/ReservationsTemplate/Resources/ngti-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/ReservationsTemplate/templateCSSfile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletInvitations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletInvitations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletPlan.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletReservations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/classes/ServletReservations.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BaseFramePC_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServletHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServletHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServletInvitations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServletInvitations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServletLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServletLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ServletPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServletPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServletPlanSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServletPlanSubmit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ServletReservations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServletReservations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ServletInvitations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ServletInvitations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ServletLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ServletLogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ServletPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ServletPlan.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ServletReservations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ServletReservations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HomeTemplate/Resources/DeskImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/HomePage/Resources/DeskImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HomeTemplate/Resources/HomePagePic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/HomePage/Resources/HomePagePic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HomeTemplate/Resources/blurred_desk1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/HomePage/Resources/blurred_desk1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HomeTemplate/Resources/ngti-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/HomePage/Resources/ngti-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HomeTemplate/templateCSSfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/HomePage/homeCSSfile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HomeTemplate/templateHTMLfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HomePage/homeHTMLfile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/InvitationsTemplate/Resources/DeskImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/InvitationsPage/Resources/DeskImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/InvitationsTemplate/Resources/HomePagePic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/InvitationsPage/Resources/HomePagePic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/InvitationsTemplate/Resources/blurred_desk1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/InvitationsPage/Resources/blurred_desk1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/InvitationsTemplate/Resources/ngti-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/InvitationsPage/Resources/ngti-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/InvitationsTemplate/templateCSSfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/InvitationsPage/invitationsCSSfile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/InvitationsTemplate/templateHTMLfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/InvitationsPage/invitationsHTMLfile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/LoginTemplate/Resources/DeskImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/LoginPage/Resources/DeskImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/LoginTemplate/Resources/HomePagePic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/LoginPage/Resources/HomePagePic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/LoginTemplate/Resources/blurred_desk1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/LoginPage/Resources/blurred_desk1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/LoginTemplate/Resources/ngti-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/LoginPage/Resources/ngti-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/LoginTemplate/templateCSSfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/LoginPage/loginCSSfile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/LoginTemplate/templateHTMLfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/LoginPage/loginHTMLfile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/Calendar Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/Calendar Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/Calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/Calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/Confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/Confirmation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/IndividualFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/IndividualFile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/IndividualReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/IndividualReservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/Resources/DeskImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/Resources/DeskImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/Resources/HomePagePic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/Resources/HomePagePic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/Resources/blurred_desk1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/Resources/blurred_desk1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/Resources/ngti-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/Resources/ngti-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/TeamFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/TeamFile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/TeamReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/TeamReservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/planCSSfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/planCSSfile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/PlanTemplate/templateHTMLfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/planHTMLfile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ReservationsTemplate/Resources/DeskImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReservationsPage/Resources/DeskImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ReservationsTemplate/Resources/HomePagePic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReservationsPage/Resources/HomePagePic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ReservationsTemplate/Resources/blurred_desk1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReservationsPage/Resources/blurred_desk1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ReservationsTemplate/Resources/ngti-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReservationsPage/Resources/ngti-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ReservationsTemplate/templateCSSfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReservationsPage/reservationsCSSfile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ReservationsTemplate/templateHTMLfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReservationsPage/reservationsHTMLfile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/Calendar Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/Calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/IndividualFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/IndividualReservation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/TeamFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/TeamReservation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/planCSSfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/planCSSfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/planHTMLfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/PlanPage/planHTMLfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/PlanPage/style1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ReservationsPage/reservationsHTMLfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReservationsPage/reservationsHTMLfile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nav-bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/nav-bar.jsp" afterDir="false" />
     </list>
     <ignored path="C:\Users\kevin\IdeaProjects\BaseFramePC\.idea\shelf/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -119,59 +68,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ServletLogin.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+            <state relative-caret-position="323">
+              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#Table#0;class#DatabaseManager#0" />
+                <element signature="method#insertValueList#0;class#Table#0;class#DatabaseManager#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ServletPlan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ServletPlanSubmit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ServletHome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ServletInvitations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -186,11 +92,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Cleanup" />
       </map>
     </option>
   </component>
@@ -198,24 +104,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
-        <option value="$PROJECT_DIR$/web/nav-bar.jsp" />
         <option value="$PROJECT_DIR$/web/PlanTemplate/templateHTMLfile.html" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/ReservationsTemplate/templateHTMLfile.jsp" />
         <option value="$PROJECT_DIR$/web/LoginTemplate/templateHTMLfile.html" />
         <option value="$PROJECT_DIR$/web/HomeTemplate/templateHTMLfile.html" />
         <option value="$PROJECT_DIR$/web/HomePage/templateHTMLfile.html" />
         <option value="$PROJECT_DIR$/web/InvitationsPage/templateHTMLfile.html" />
         <option value="$PROJECT_DIR$/web/HomePage/homeHTMLfile.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ServletReservations.java" />
         <option value="$PROJECT_DIR$/web/ReservationsTemplate/reservationsHTMLfile.jsp" />
         <option value="$PROJECT_DIR$/web/LoginPage/loginHTMLfile.html" />
         <option value="$PROJECT_DIR$/src/main/java/ServletLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/ServletInvitations.java" />
         <option value="$PROJECT_DIR$/src/main/java/ServletHome.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ServletPlan.java" />
         <option value="$PROJECT_DIR$/src/main/java/ServletPlanSubmit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServletReservations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServletPlan.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/nav-bar.jsp" />
+        <option value="$PROJECT_DIR$/web/PlanPage/planCSSfile.css" />
+        <option value="$PROJECT_DIR$/web/PlanPage/planHTMLfile.html" />
+        <option value="$PROJECT_DIR$/web/ReservationsPage/reservationsHTMLfile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ServletDeleteReservations.java" />
+        <option value="$PROJECT_DIR$/web/ReservationsPage/updateReservations.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ServletUpdateReservations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
       </list>
     </option>
   </component>
@@ -234,10 +146,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="-24" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1hrTQ4q5261SFL3YyLwXy902aa8" />
   <component name="ProjectView">
@@ -245,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,12 +190,31 @@
               <item name="BaseFramePC" type="b2602c69:ProjectViewProjectNode" />
               <item name="BaseFramePC" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="LoginPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BaseFramePC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BaseFramePC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="PlanPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BaseFramePC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BaseFramePC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ReservationsPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BaseFramePC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BaseFramePC" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -416,6 +345,7 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -439,6 +369,7 @@
       <workItem from="1602752618281" duration="2413000" />
       <workItem from="1603364268869" duration="2929000" />
       <workItem from="1604314771570" duration="228000" />
+      <workItem from="1607249420093" duration="7487000" />
     </task>
     <task id="LOCAL-00001" summary="alles samengevoegd">
       <created>1604322335136</created>
@@ -454,16 +385,38 @@
       <option name="project" value="LOCAL" />
       <updated>1606137793314</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleaned up templateNaming">
+      <created>1606654636962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606654636963</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added displaying data to web">
+      <created>1606656659095</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606656659095</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added displaying data to web and finalized cleanup">
+      <created>1606661668886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606661668887</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22424000" />
+    <option name="totallyTimeSpent" value="37221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -473,7 +426,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42578548" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2665222" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -497,7 +450,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -507,7 +460,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35211268" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42578548" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,7 +522,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="alles samengevoegd" />
     <MESSAGE value="reservation implementation started" />
-    <option name="LAST_COMMIT_MESSAGE" value="reservation implementation started" />
+    <MESSAGE value="cleaned up templateNaming" />
+    <MESSAGE value="added displaying data to web" />
+    <MESSAGE value="added displaying data to web and finalized cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="added displaying data to web and finalized cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="336" key="#BuildArtifactsBeforeRunChooser" />
@@ -648,9 +604,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/nav-bar.jsp</url>
-          <line>28</line>
+          <line>11</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -662,31 +618,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/planCSSfile.css" />
-    <entry file="file://$PROJECT_DIR$/web/PlanPage/planCSSfile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="method#DataBase#0;class#DataBase#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="141" column="12" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="12" />
-          <folding>
-            <element signature="method#setup#0;class#DatabaseManager#0" />
-            <element signature="method#executeSQLstatement#0;class#DatabaseManager#0" />
-            <element signature="method#getResultsFromQuery#0;class#DatabaseManager#0" />
           </folding>
         </state>
       </provider>
@@ -715,22 +652,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/nav-bar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/ReservationsPage/reservationsCSSfile.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ReservationsPage/reservationsHTMLfile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/LoginPage/loginCSSfile.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -742,37 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ServletReservations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/PlanPage/planHTMLfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3876">
-          <caret line="228" column="7" selection-start-line="228" selection-start-column="7" selection-end-line="228" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-623">
-          <caret line="53" column="107" selection-start-line="53" selection-start-column="107" selection-end-line="53" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ServletInvitations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -780,16 +672,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ServletHome.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServletPlanSubmit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="204">
+          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ServletLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="391">
           <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -797,17 +689,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ServletPlan.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServletReservations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="272">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ServletPlanSubmit.java">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+        <state relative-caret-position="841">
+          <caret line="53" column="107" selection-start-line="53" selection-start-column="107" selection-end-line="53" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServletHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServletPlan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/PlanPage/planHTMLfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/PlanPage/planCSSfile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ReservationsPage/updateReservations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServletDeleteReservations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ServletUpdateReservations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ReservationsPage/reservationsHTMLfile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/nav-bar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Table#0;class#DatabaseManager#0" />
+            <element signature="method#insertValueList#0;class#Table#0;class#DatabaseManager#0" />
+          </folding>
         </state>
       </provider>
     </entry>
