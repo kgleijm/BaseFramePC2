@@ -17,11 +17,6 @@ public class ServletReservations extends HttpServlet{
 
         String email = req.getParameter("email");
 
-
-//        for (int i = 0; i < 10; i++) {
-//            System.out.println(email + " sent reservations request to ReservationServlet");
-//        }
-
         RequestDispatcher view = req.getRequestDispatcher("ReservationsPage/reservationsHTMLfile.jsp");
         view.forward(req, res);
     }

@@ -66,11 +66,10 @@
                         <td class="table"><%=rs.getString("logintable_loginname")%></td>
                         <td class="table"><%=rs.getString("logintable_emailaddress")%></td>
                         <td class="table">
-                            <a href="${pageContext.request.contextPath}/linkHome"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            <a onclick="onUpdate()" style="color: #007bff; cursor: pointer"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                         </td>
                         <td class="table">
-                            <a href="${pageContext.request.contextPath}/linkHome"> <i class="fa fa-trash" aria-hidden="true"></i></a>
-                        </td>
+                            <a onclick="onDelete()" style="color: #007bff; cursor: pointer"> <i class="fa fa-trash" aria-hidden="true"></i></a>                        </td>
                     </tr>
                 </tbody>
                 <%
@@ -91,14 +90,56 @@
         $("#nav-placeholder").load("nav-bar.jsp");
     });
 
-    $("tr.table").click(function() {
-        var tableData = $(this).children("td").map(function() {
-            return $(this).text();
-        }).get();
+    function onDelete() {
+        var tableData;
 
-        alert($.trim(tableData[0]) + " , " + $.trim(tableData[1]));
-        //call servlet here (with ajax)
-    });
+        $("tr.table").click(function () {
+            tableData = $(this).children("td").map(function () {
+                return $(this).text();
+            }).get();
+        });
+
+        $.confirm({
+            title: 'Delete Reservation',
+            content: 'Are you sure you want to delete this reservation?',
+            buttons: {
+                confirm: function () {
+                    var redirectUrl = 'linkDeleteReservations';
+                    //using jquery to post data dynamically
+                    var form = $('<form action="' + redirectUrl + '" method="post">' +
+                        '<input type="text" name="time" value="' + tableData[0] + '" />' +
+                        '<input type="text" name="email" value="' + tableData[1] + '" />' +
+                        '<input type="text" name="name" value="' + tableData[2] + '" />' +
+                        '</form>');
+                    $('body').append(form);
+                    form.submit();
+                },
+                cancel: function () {
+
+                }
+            }
+        });
+    }
+
+    function onUpdate() {
+        $("tr.table").click(function () {
+            var tableData = $(this).children("td").map(function () {
+                return $(this).text();
+            }).get();
+
+            // alert($.trim(tableData[0]) + " , " + $.trim(tableData[1]) + ", " + $.trim(tableData[2]));
+
+            var redirectUrl = 'linkUpdateReservations';
+            //using jquery to post data dynamically
+            var form = $('<form action="' + redirectUrl + '" method="post">' +
+                '<input type="text" name="time" value="' + tableData[0] + '" />' +
+                '<input type="text" name="email2" value="' + tableData[1] + '" />' +
+                '<input type="text" name="name" value="' + tableData[2] + '" />' +
+                '</form>');
+            $('body').append(form);
+            form.submit();
+        });
+    }
 
 </script>
 </html>
